@@ -1,0 +1,172 @@
+<!DOCTYPE html> 
+<html> 
+<style> 
+
+/* *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    } */
+    /*add full-width input fields*/ 
+      
+    input[type=text], 
+    input[type=password],input[type=password]{ 
+        width: 100%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 2px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+    /* set a style for all buttons*/ 
+
+    body{
+        font-family: 'Segoe UI', sans-serif;;
+        font-size: 1rem;
+        line-height: 1.6;
+        height: 100%;
+    }
+
+    .signup-form{
+        width: 350px;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+        padding: 2rem;
+        background: #ffffff;
+    }
+      
+    button { 
+        background-color:#69c8e7; 
+        color: white; 
+        padding: 15px 20px; 
+        margin: 8px 0; 
+        cursor: pointer; 
+        width: 50%; 
+    } 
+    /*set styles for the cancel button*/ 
+      
+    .cancelbtn { 
+        padding: 15px 20px; 
+        background-color:#69c8e7; 
+    } 
+    /*float cancel and signup buttons and add an equal width*/ 
+      
+    .cancelbtn, 
+    .signupbtn { 
+        float: left; 
+        width: 50%; 
+    } 
+    /*add padding to container elements*/ 
+      
+    .container { 
+        padding: 16px; 
+    } 
+    /*clear floats*/ 
+      
+    /* .clearfix::after { 
+        content: ""; 
+        clear: both; 
+        display: table; 
+    }  */
+    /*styles for cancel button and signup button  
+      on extra small screens*/ 
+      
+    @media screen and (max-width: 300px) { 
+        .cancelbtn, 
+        .signupbtn { 
+            width: 50%; 
+        } 
+    } 
+
+    .wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fafafa;
+    }
+    html{
+        height: 100%;
+    }
+
+    .form-input{
+        background: #fafafa;
+        border: 1px solid #eeeeee;
+        padding: 12px;
+        width: 100%;
+    }
+    .form-group{
+        margin-bottom: 1rem;
+    }
+    .form-button{
+        background: #69d2e7;
+        border: 1px solid #ddd;
+        color: #ffffff;
+        padding: 10px;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    .form-button:hover{
+        background: #69c8e7;
+    }
+    .form-header{
+        text-align: center;
+        margin-bottom : 2rem;
+    }
+    .form-footer{
+        text-align: center;
+    }
+</style> 
+  
+<body> 
+  
+    
+    <!--Step 1:Adding HTML-->
+    <div class="wrap">
+        <form class="signup-form" action="Login">
+            <div class="form-header">
+                <h3>Signup Form</h3>
+                
+                <p>Signup to access your login page</p>
+            </div>
+            
+            <div class="form-group">
+                
+                <input type="text" class="form-input" placeholder="Enter the mail">
+            </div>
+            <!--Password Input-->
+            <div class="form-group">
+            
+                <input type="password" class="form-input" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+                
+                <input type="password" class="form-input" placeholder="Re-enter password">
+            </div>
+
+            <!--SignUp Button-->
+            <div class="form-group">
+                
+                 
+                    <button type="button" class="form-cancelbtn">Cancel</button> 
+                    <button type="submit" class="form-signupbtn">Sign Up</button> 
+                     
+
+            </div> 
+            
+            
+        </form>
+    </div>
+</body>    
+</html>
+    
+
+
+
+
+
+
+
+    
